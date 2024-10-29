@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Estacionamiento4MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sector_4_estacionamientos"
+            android:layout_gravity="center"
+            android:textSize="23sp"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/latolight"
+            />
+
+        <EditText
+            android:id="@+id/editEstacionamiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="nombre"
+            android:hint="Ingresa un estacionamiento"
+            android:textSize="23sp"
+            android:layout_marginBottom="10dp"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:fontFamily="@font/latolight"
+            />
+
+        <EditText
+            android:id="@+id/editEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="estado"
+            android:hint="Ingresa el estado (Libre/Ocupado)"
+            android:textSize="23sp"
+            android:layout_marginBottom="15dp"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:fontFamily="@font/latolight"
+            />
+
+        <Button
+            android:id="@+id/btnAgregar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar"
+            android:fontFamily="@font/latolight"
+            android:textStyle="bold"
+            android:backgroundTint="@color/azul_especial"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/btnActualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actualizar"
+            android:fontFamily="@font/latolight"
+            android:textStyle="bold"
+            android:backgroundTint="@color/azul_especial"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/btnEliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eliminar"
+            android:fontFamily="@font/latolight"
+            android:textStyle="bold"
+            android:backgroundTint="@color/azul_especial"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver al Home"
+            android:fontFamily="@font/latolight"
+            android:textStyle="bold"
+            android:backgroundTint="@color/naranjo"
+            android:textColor="@color/black"
+            />
+
+        <ListView
+            android:id="@+id/lista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/latolight"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

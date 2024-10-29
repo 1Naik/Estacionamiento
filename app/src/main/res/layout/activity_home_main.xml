@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".HomeMainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutHome1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/azul_cielo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/tvTituloHome1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/home"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/latolight"
+            android:layout_weight="1"
+            android:gravity="start"
+            />
+
+
+        <ImageView
+            android:id="@+id/imv_home1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_settings"
+            android:contentDescription="@string/icono_de_configuracion"
+            android:layout_marginStart="16dp"
+            app:tint="@color/white" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutHome2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutHome1">
+
+        <Button
+            android:id="@+id/btnHome1"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"
+            android:paddingVertical="30dp"
+            android:text="@string/sector_1_ocupado_70"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="15dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/latolight"
+            android:backgroundTint="@color/azul_especial"
+            />
+
+        <Button
+            android:id="@+id/btnHome2"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"
+            android:paddingVertical="30dp"
+            android:textColor="@color/black"
+            android:text="@string/sector_2_ocupado_30"
+            android:lineSpacingExtra="15dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/latolight"
+            android:backgroundTint="@color/azul_especial"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutHome3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutHome2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <TextView
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sectores_de_estacionamientos"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="@font/latolight"
+            />
+
+        <Button
+            android:id="@+id/btnHomeSector1"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/sector_1"
+            android:layout_marginHorizontal="15dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/azul_especial"
+            />
+
+        <Button
+            android:id="@+id/btnHomeSector2"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="15dp"
+            android:text="@string/sector_2"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/azul_especial"
+            />
+        <Button
+            android:id="@+id/btnHomeSector3"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="15dp"
+            android:text="@string/sector_3"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/azul_especial"
+            />
+        <Button
+            android:id="@+id/btnHomeSector4"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="15dp"
+            android:text="@string/sector_4"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/azul_especial"
+            />
+        <Button
+            android:id="@+id/btnHomeSector5"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="15dp"
+            android:text="@string/sector_5"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/azul_especial"
+            />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
